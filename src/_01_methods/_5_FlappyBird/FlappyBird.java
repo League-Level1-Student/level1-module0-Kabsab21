@@ -63,8 +63,9 @@ int lowerY = 500;
     boolean intersectsPipes() { 
         if (y < pipeH &&  x > pipeX && x < (pipeX+100)){
            return true; }
-       else if (y>500 && x > pipeX && x < (pipeX+100)) {
+       else if (y>lowerY && x > pipeX && x < (pipeX+100)) {
            return true; }
-       else { return false; }
+       else { return false; 
 }
     }
+}
